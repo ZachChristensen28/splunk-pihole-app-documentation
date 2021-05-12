@@ -17,6 +17,8 @@ markdown_extensions:
   - admonition
   - pymdownx.details
   - pymdownx.superfences
+  - abbr
+  - pymdownx.snippets
 
 theme:
   name: material
@@ -53,5 +55,6 @@ nav:
       - Troubleshooting:
           - 'Troubleshoot Enrichment': getting-started/troubleshooting/troubleshoot-enrichment.md
   - Reference:
+      - 'Search Macros Used': reference/reference-macros.md
       - Changelog: 
           - Releases: reference/releases/index.md

@@ -2,7 +2,7 @@
 
 !!! info "Optional Step"
 
-Enabling Data model acceleration will allow the searches to perform much more efficiently for larger datasets. If you run into issues with dashboards taking too long to load, data model acceleration will increase performance with a slight increase to resource usage. To learn more about data model acceleration see [Splunk Docs: Accelerate data models](https://docs.splunk.com/Documentation/Splunk/latest/Knowledge/Acceleratedatamodels).
+Enabling Data model acceleration (DMA) will allow the searches to perform much more efficiently for larger datasets. If you run into issues with dashboards taking too long to load, data model acceleration will increase performance with a slight increase to resource usage. To learn more about data model acceleration see [Splunk Docs: Accelerate data models](https://docs.splunk.com/Documentation/Splunk/latest/Knowledge/Acceleratedatamodels).
 
 ## Enable Acceleration
 
@@ -23,3 +23,5 @@ Before enabling Data model acceleration, ensure your dns index has been allowed 
 1. Once the appropriate indexes are listed, check the "Accelerate" box at the top and save.
 1. The data model will begin to build. This may take some time depending on the size.
 1. Update the `pihole_summariesonly` macro to "summariesonly=true". Setting this will force the dashboards to use accelerated data only, optimizing the searches. see [Update Macros](configure-macros.md) in this documentation for more information.
+
+--8<-- "includes/abbreviations.md"

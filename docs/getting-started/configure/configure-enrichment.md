@@ -11,19 +11,23 @@ The steps to setup enrichment for this app utilize Splunk Lookups. For more info
 !!! note
     The following steps only apply if you are using your Pi-hole server as your DHCP server. If you are not using the Pi-hole as your DHCP server, see [Alternative Enrichment Configuration](#alternative-enrichment-configuration).
 
-For the built-in DHCP hostname enrichment to work, there are two scheduled searches that need to be enabled <small>(Disabled by default)</small>.
+For the built-in DHCP hostname enrichment to work, there is a scheduled search that needs to be enabled <small>(Disabled by default)</small>.
 
 Search Name | Description | Default Schedule
 ----------- | ----------- | ----------------
-Pihole - Create DHCP Lease Lookup | Only needs to be run once. This will create the initial lookup for DHCP leases. Defaults to the last 7 days. | None
 Pihole - DHCP Leases Lookup - Gen | Recurring search to keep DHCP leases up to date. | Runs Hourly
-<small>(Optional)</small> Pihole - DHCP Remove Old Leases | This search will remove leases that have not been updated for a period of time. The default is two weeks. | Once per day
 
 1. From Splunk Web, open the Pihole DNS App for Splunk.
 1. Navigate to Settings > Searches, Reports, and Alerts.
 1. Ensure the "App" context is the Pihole DNS App for Splunk by using the dropdown.
 1. Set the "Owner" to "all"
-1. For each Search wanting to be enabled click "Edit" > "Enable"
+1. Enabled by clicking "Edit" > "Enable"
+1. Click "Run"
+
+Clicking Run will build the lookup for the first time. After that, the lookup will run hourly to keep the information up to date. The frequency that the search runs can be updated by the following:
+
+1. From the same screen, click Edit > Edit Schedule.
+1. Update the schedule as needed.
 
 ## Alternative Enrichment Configuration
 
@@ -49,12 +53,13 @@ Once installed, the lookup editor can be used to create a new CSV lookup.
 1. Leave the "User-only" box uncheked. This will give the lookup the global scope permissions it needs. 
 1. Create column headers (row 1). This app uses the following for the CSV header, however, any field names can be used.
 
+    <small>Recommended Headers</small>
     ```text
     dest_nt_host,dest_ip,dest_mac
     ```
 
 1. Populate the remaing rows with the IP and host information.
-1. Once saved, move on to [Update Search Macro](#update-search-macro).
+1. Once saved, move on to [Update Lookup Macros](../configure-macros/#update-lookup-macros).
 
 #### Method 2 - Create and Upload a new CSV file
 
@@ -63,6 +68,7 @@ A lookup file can be created outside of Splunk and then uploaded via the web int
 1. Use an editor to create a file in CSV format.
 1. Create column headers (row 1). This app uses the following for the CSV header, however, any field names can be used.
 
+    <small>Recommended Headers</small>
     ```text
     dest_nt_host,dest_ip,dest_mac
     ```
@@ -79,7 +85,7 @@ A lookup file can be created outside of Splunk and then uploaded via the web int
 1. Modify the permissions for the file by clicking "Permissions."
 1. Select "All apps (system)" from the two radio options.
 1. Check "Read" permissions for Everyone. Write permissions can be given as needed (typically set to admin & power).
-1. After saving, move to [Update Search Macro](#update-search-macro).
+1. After saving, move to [Update Lookup Macros](../configure-macros/#update-lookup-macros).
 
 ### Use an existing lookup file
 
@@ -89,28 +95,4 @@ If you already have an existing lookup file that contains a mapping of hostnames
 1. Users are able to read the lookup file. 
 1. If you are using a lookup file and a lookup definition, also ensure the lookup definition has the same permissions as above.
 
-Once verified the correct permissions are set, see [Update Search Macro](#update-search-macro).
-
-### Update Search Macro
-
-Once you have a lookup file conatined with IP and hostname information, the default search macro must be updated for automatic enrichment.
-
-1. Open the Pihole DNS app for Splunk.
-1. Navigate to Settings > Advanced Search > Search macros.
-
-    ??? question "Not seeing any results"
-        If no results are found, be sure that the "App" context is set to the Pihole DNS app, owner is set to "Any", and choose "Created in the App" from the remaining drop-down.
-
-1. Click "pihole_enrich_hostname(1)". This opens up the editor page.
-1. Modify the fields contained by "< >" with the correct values:
-
-    ```text
-    lookup <your_lookup.csv> <your_ip_field> as "$ip_field$" OUTPUTNEW <your_hostname_field> as Hostname
-    ```
-
-    ???+ tip "Example"
-        ```text
-        lookup pihole_lookup.csv client_ip as "$ip_field$" OUTPUTNEW client_name as Hostname
-        ```
-
-1. After saving, navigate back to the Pihole DNS app and you should now see the "Hostname" field being populated. If not, see [Troubleshooting Enrichment](../troubleshooting/troubleshoot-enrichment.md).
+Once verified the correct permissions are set, see [Update Lookup Macros](../configure-macros/#update-lookup-macros).
