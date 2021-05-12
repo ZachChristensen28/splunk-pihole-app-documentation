@@ -1,0 +1,57 @@
+site_name: Pi-hole App for Splunk Documentation
+edit_uri: ""
+repo_url: https://github.com/ZachChristensen28/pihole_dns_app
+repo_name: ZachChristensen28/pihole_dns_app
+
+plugins:
+  - git-revision-date-localized:
+      type: date
+      fallback_to_build_date: true
+  - search
+
+markdown_extensions:
+  - toc:
+      permalink: true
+  - attr_list
+  - meta
+  - admonition
+  - pymdownx.details
+  - pymdownx.superfences
+
+theme:
+  name: material
+  icon:
+    repo: fontawesome/brands/github
+  features:
+    # - header.autohide
+    - navigation.instant
+    - navigation.tabs
+    - navigation.sections
+    - navigation.top
+    - toc.integrate
+  palette:
+    - media: "(prefers-color-scheme: light)"
+      scheme: default
+      toggle:
+        icon: material/toggle-switch-off-outline
+        name: Switch to dark mode
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      toggle:
+        icon: material/toggle-switch
+        name: Switch to light mode
+
+nav:
+  - Home: index.md
+  - 'Getting Started':
+      - 'Where to Install': getting-started/where-to-install.md
+      - 'App Dependencies': getting-started/app-dependencies.md
+      - 'Configure':
+          - 'Setup Enrichment': getting-started/configure/configure-enrichment.md
+          - 'Setup Data Model Acceleration': getting-started/configure/configure-dma.md
+          - 'Update Macros': getting-started/configure/configure-macros.md
+      - Troubleshooting:
+          - 'Troubleshoot Enrichment': getting-started/troubleshooting/troubleshoot-enrichment.md
+  - Reference:
+      - Changelog: 
+          - Releases: reference/releases/index.md
