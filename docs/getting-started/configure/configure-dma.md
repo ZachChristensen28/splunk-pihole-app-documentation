@@ -22,6 +22,6 @@ Before enabling Data model acceleration, ensure your dns index has been allowed 
 
 1. Once the appropriate indexes are listed, check the "Accelerate" box at the top and save.
 1. The data model will begin to build. This may take some time depending on the size.
-1. Update the `pihole_summariesonly` macro to "summariesonly=true". Setting this will force the dashboards to use accelerated data only, optimizing the searches. see [Update Macros](configure-macros.md) in this documentation for more information.
+1. Update the `pihole_summariesonly` macro to "summariesonly=true". Setting this will force the dashboards to use accelerated data only, optimizing the searches. see [Update Macros](../configure-macros/#update-search-related-macros) in this documentation for more information.
 
 --8<-- "includes/abbreviations.md"

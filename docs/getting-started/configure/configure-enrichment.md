@@ -1,8 +1,7 @@
 # Configure Enrichment
 
-!!! info "Optional Step"
-
-This app can automatically enrich IPs with hostnames populated from DHCP events. This step can be skipped if enrichment is not required.
+???+ info "Optional Step"
+    This app can automatically enrich IPs with hostnames populated from DHCP events. This step can be skipped if enrichment is not required.
 
 The steps to setup enrichment for this app utilize Splunk Lookups. For more information on lookups see [Splunk Docs: About lookups](https://docs.splunk.com/Documentation/Splunk/latest/Knowledge/Aboutlookupsandfieldactions).
 
@@ -21,7 +20,7 @@ Pihole - DHCP Leases Lookup - Gen | Recurring search to keep DHCP leases up to d
 1. Navigate to Settings > Searches, Reports, and Alerts.
 1. Ensure the "App" context is the Pihole DNS App for Splunk by using the dropdown.
 1. Set the "Owner" to "all"
-1. Enabled by clicking "Edit" > "Enable"
+1. Enable by clicking "Edit" > "Enable"
 1. Click "Run"
 
 Clicking Run will build the lookup for the first time. After that, the lookup will run hourly to keep the information up to date. The frequency that the search runs can be updated by the following:

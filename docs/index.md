@@ -40,4 +40,4 @@ Version | 2.2.0 - [Splunkbase](https://splunkbase.splunk.com/app/4506) \| [GitHu
 Vendor Product Version | [Pi-hole® v5.3.x, FTL 5.8.x](https://pi-hole.net/)
 Add-on has a web UI | Yes, this app contains a collection of dashboards.
 
-[Get Started](getting-started/where-to-install.md){ .md-button .md-button--primary }
+[Get Started](getting-started/app-dependencies/){ .md-button .md-button--primary }

@@ -46,8 +46,8 @@ theme:
 nav:
   - Home: index.md
   - 'Getting Started':
-      - 'Where to Install': getting-started/where-to-install.md
       - 'App Dependencies': getting-started/app-dependencies.md
+      - 'Where to Install': getting-started/where-to-install.md
       - 'Configure':
           - 'Setup Enrichment': getting-started/configure/configure-enrichment.md
           - 'Setup Data Model Acceleration': getting-started/configure/configure-dma.md

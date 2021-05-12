@@ -2,13 +2,10 @@
 
 ## Pi-hole DNS app for Splunk
 
-!!! todo
-    update date
-
-### v2.2.0 <small>date</small>
+### v2.2.0 <small>May 12, 2021</small>
 
 * Fixed issue causing DNS search dashboard to not populate from a custom lookup -> [#35](https://github.com/ZachChristensen28/pihole_dns_app/issues/35)
-* Made DHCP lookup simplier
+* Made DHCP lookup simplier and removed excess saved searches related to the DHCP lookup.
 
 ### v2.1.9 <small>April 28, 2021</small>
 
