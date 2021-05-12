@@ -37,7 +37,6 @@ This documentation assumes the following:
 Info | Description
 ---- | -----------
 Version | 2.2.0 - [Splunkbase](https://splunkbase.splunk.com/app/4506) \| [GitHub](https://github.com/ZachChristensen28/pihole_dns_app)
-Vendor Product Version | [Pi-hole® v5.3.x, FTL 5.8.x](https://pi-hole.net/)
-Add-on has a web UI | Yes, this app contains a collection of dashboards.
+Vendor Product Version | [Pi-hole® 5.3.x, FTL 5.8.x](https://pi-hole.net/)
 
 [Get Started](getting-started/app-dependencies/){ .md-button .md-button--primary }
