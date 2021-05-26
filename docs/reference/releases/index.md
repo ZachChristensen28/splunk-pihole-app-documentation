@@ -2,6 +2,10 @@
 
 ## Pi-hole DNS app for Splunk
 
+### v2.2.1 <small>TODO</small>
+
+* Fixed error in stats command error on Splunk version 8.2.0 - [#38](https://github.com/ZachChristensen28/pihole_dns_app/issues/38)
+
 ### v2.2.0 <small>May 12, 2021</small>
 
 * Fixed issue causing DNS search dashboard to not populate from a custom lookup -> [#35](https://github.com/ZachChristensen28/pihole_dns_app/issues/35)
