@@ -49,7 +49,7 @@ Once installed, the lookup editor can be used to create a new CSV lookup.
 1. Click "Create a New Lookup" > CSV lookup.
 1. Give the lookup a descriptive name.
 1. Choose which App context this lookup will be stored in <small>(i.e. Search & Reporting)</small>.
-1. Leave the "User-only" box uncheked. This will give the lookup the global scope permissions it needs. 
+1. Leave the "User-only" box unchecked. This will give the lookup the global scope permissions it needs. 
 1. Create column headers (row 1). This app uses the following for the CSV header, however, any field names can be used.
 
     <small>Recommended Headers</small>
@@ -57,7 +57,7 @@ Once installed, the lookup editor can be used to create a new CSV lookup.
     dest_nt_host,dest_ip,dest_mac
     ```
 
-1. Populate the remaing rows with the IP and host information.
+1. Populate the remaining rows with the IP and host information.
 1. Once saved, move on to [Update Lookup Macros](../configure-macros/#update-lookup-macros).
 
 #### Method 2 - Create and Upload a new CSV file
@@ -72,7 +72,7 @@ A lookup file can be created outside of Splunk and then uploaded via the web int
     dest_nt_host,dest_ip,dest_mac
     ```
 
-1. Populate the remaing rows with the IP and host information.
+1. Populate the remaining rows with the IP and host information.
 1. Be sure to save the file with a `.csv` extension.
 1. Open Splunk Web.
 1. Navigate to Settings > Lookups > Lookup table files (click "+ Add new")
