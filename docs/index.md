@@ -36,7 +36,7 @@ This documentation assumes the following:
 
 Info | Description
 ---- | -----------
-Version | 2.2.0 - [Splunkbase](https://splunkbase.splunk.com/app/4506) \| [GitHub](https://github.com/ZachChristensen28/pihole_dns_app)
+Version | 2.2.1 - [Splunkbase](https://splunkbase.splunk.com/app/4506) \| [GitHub](https://github.com/ZachChristensen28/pihole_dns_app)
 Vendor Product Version | [Pi-hole® 5.3.x, FTL 5.8.x](https://pi-hole.net/)
 
 [Get Started](getting-started/app-dependencies/){ .md-button .md-button--primary }
