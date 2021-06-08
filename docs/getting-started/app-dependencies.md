@@ -8,6 +8,6 @@ The following table describes the Apps that are needed to utilize the full capab
 Splunkbase App | Description
 -------------- | -----------
 [Pihole DNS Add-on](https://splunkbase.splunk.com/app/4506) | Technical Add-on needed for Splunk to correctly parse the Pi-hole data.
-[Splunk Common Information Model](https://splunkbase.splunk.com/app/1621/) | The Splunk CIM noramlizes the data into datamodels which this app leverages for performance.
-[Force Directed App for Splunk](https://splunkbase.splunk.com/app/3767/) | Visualization utlized in dashboards.
+[Splunk Common Information Model](https://splunkbase.splunk.com/app/1621/) | The Splunk CIM normalizes the data into datamodels which this app leverages for performance.
+[Force Directed App for Splunk](https://splunkbase.splunk.com/app/3767/) | Visualization utilized in dashboards.
 [Status Indicator - Custom Visualizatioin](https://splunkbase.splunk.com/app/3119/) | Visualization utilized in dashboards.
