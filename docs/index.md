@@ -15,7 +15,7 @@ This Splunk Add-on is community driven and not affiliated with the official [Pi-
 
 * Allows for easier troubleshooting of blocked queries.
 * Prebuilt dashboards that allows you to drill-down to specific queries for further analysis.
-* View daily trends and easily identify if queries are outside the month's norm. 
+* View daily trends and easily identify if queries are outside the month's norm.
 * Test Regex filters before applying them on the Pi-hole server.
 * View a list of all DHCP clients.
 * Identify errors that may be a result of a misconfiguration.
@@ -36,7 +36,7 @@ This documentation assumes the following:
 
 Info | Description
 ---- | -----------
-Version | 2.2.1 - [Splunkbase](https://splunkbase.splunk.com/app/4506) \| [GitHub](https://github.com/ZachChristensen28/pihole_dns_app)
-Vendor Product Version | [Pi-hole® 5.3.x, FTL 5.8.x](https://pi-hole.net/)
+Version | 2.2.2 - [Splunkbase](https://splunkbase.splunk.com/app/4506) \| [GitHub](https://github.com/ZachChristensen28/pihole_dns_app)
+Vendor Product Version | [Pi-hole® 5.x, FTL 5.x](https://pi-hole.net/)
 
 [Get Started](getting-started/app-dependencies/){ .md-button .md-button--primary }
