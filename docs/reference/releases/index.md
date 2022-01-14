@@ -4,9 +4,9 @@
 
 ### v2.2.2 <small>Jan 14, 2022</small>
 
-- Updated search dasboard to allow filtering of pie charts based of query input.
+- Updated search dashboard to allow filtering of pie charts based of query input.
 - Deprecating all knowledge objects for blocklist activity. This feature will be brought back with v6 of Pi-hole.
-- Added ability to search by host in dashbaords.
+- Added ability to search by host in dashboards.
 - Transaction search dashboard will now show if the CNAME was blocked.
 
 ### v2.2.1 <small>June 7, 2021</small>
