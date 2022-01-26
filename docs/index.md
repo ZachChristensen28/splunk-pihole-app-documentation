@@ -34,6 +34,8 @@ This documentation assumes the following:
 
 ## About
 
+See [Release Notes](reference/releases) for version specific information.
+
 Info | Description
 ---- | -----------
 Version | 2.2.2 - [Splunkbase](https://splunkbase.splunk.com/app/4506) \| [GitHub](https://github.com/ZachChristensen28/pihole_dns_app)
