@@ -1,7 +1,7 @@
-# splunk-pihole-app-documentation
+# Pi-hole App for Splunk Documentation
 
-[![Documentation Status](https://readthedocs.org/projects/splunk-pihole-app-documentation/badge/?version=latest)](https://splunk-pihole-app-documentation.readthedocs.io/en/latest/?badge=latest)
+[![Docs](https://github.com/ZachChristensen28/splunk-pihole-app-documentation/actions/workflows/ci.yml/badge.svg)](https://splunk-pihole.ztsplunker.com/)
 
-Documentation for the Pihole App for Splunk.
+## Documentation Site
 
-Documentation hosted at https://splunk-pihole-app-documentation.rtfd.io/
+[https://splunk-pihole.ztsplunker.com/](https://splunk-pihole.ztsplunker.com/)

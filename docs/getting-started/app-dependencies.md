@@ -2,7 +2,7 @@
 
 The following table describes the Apps that are needed to utilize the full capabilities of the app. Please install and configure these apps prior to deploying this app.
 
-!!! warning
+!!! danger "[Danger, Will Robinson](https://cultural-phenomenons.fandom.com/wiki/Danger,_Will_Robinson)"
     Failure to install any of the below apps/add-ons will cause this app to not function as intended.
 
 Splunkbase App | Description
