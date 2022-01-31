@@ -52,8 +52,7 @@ Once installed, the lookup editor can be used to create a new CSV lookup.
 1. Leave the "User-only" box unchecked. This will give the lookup the global scope permissions it needs.
 1. Create column headers (row 1). This app uses the following for the CSV header, however, any field names can be used.
 
-    <small>Recommended Headers</small>
-    ```text
+    ```text title="Recomended Headers"
     dest_nt_host,dest_ip,dest_mac
     ```
 
@@ -67,8 +66,7 @@ A lookup file can be created outside of Splunk and then uploaded via the web int
 1. Use an editor to create a file in CSV format.
 1. Create column headers (row 1). This app uses the following for the CSV header, however, any field names can be used.
 
-    <small>Recommended Headers</small>
-    ```text
+    ```text title="Recomended Headers"
     dest_nt_host,dest_ip,dest_mac
     ```
 
