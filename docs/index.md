@@ -5,11 +5,16 @@ hide:
 ---
 # Home
 
+!!! quote ""
+    __*Disclaimer*__
+
+    *This Splunk app is __not__ affiliated with* [__Pi-hole__®](https://pi-hole.net) *and is not sponsored or sanctioned by the Pi-hole® team. As such, the included documentation does not contain information on how to get started with the Pi-hole DNS server. Rather, this documentation serves as a guide to help visualize the data in Splunk. Please visit [https://pi-hole.net](https://pi-hole.net) for documentation on installing/configuring your own Pi-hole server.*
+
+    Pi-hole is and the Pi-hole logo are [registered trademarks](https://pi-hole.net/trademark-rules-and-brand-guidelines/) of Pi-hole LLC.
+
 Visualize your Pi-hole in Splunk! If you've landed on this app, it's probably because you are running your own super awesome Pi-hole® server. If not, check it out! [https://pi-hole.net/](https://pi-hole.net/)
 
 This app works with the [Pihole DNS Add-on](https://splunkbase.splunk.com/app/4505/) add-on which provides the field extractions necessary for this app.
-
-This Splunk Add-on is community driven and not affiliated with the official [Pi-hole®](https://pi-hole.net) application. As such, the included documentation does not contain information on how to get started with the Pi-hole DNS server. Rather, this documentation serves as a guide to help visualize the data in Splunk. Please visit [https://pi-hole.net](https://pi-hole.net) for documentation on installing/configuring your own Pi-hole server.
 
 ## Key Features
 
@@ -30,7 +35,7 @@ This documentation assumes the following:
 1. You have a working Pi-hole server.
 2. You have a working Splunk environment.
 3. Basic understanding of Splunk and Pi-hole.
-4. The [Pihole DNS Add-on for Splunk](https://splunkbase.splunk.com/app/4505) has been installed and configured. see [https://splunk-pihole-ta-documentation.rtfd.io/](https://splunk-pihole-ta-documentation.rtfd.io/) for full documentation.
+4. The [Pihole DNS Add-on for Splunk](https://splunkbase.splunk.com/app/4505) has been installed and configured.
 
 ## About
 

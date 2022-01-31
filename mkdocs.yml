@@ -19,6 +19,10 @@ markdown_extensions:
   - pymdownx.superfences
   - abbr
   - pymdownx.snippets
+  - md_in_html
+  - pymdownx.highlight:
+      anchor_linenums: true
+  - pymdownx.inlinehilite
 
 theme:
   name: material
@@ -29,10 +33,13 @@ theme:
   features:
     # - header.autohide
     - navigation.instant
+    - navigation.tracking
     - navigation.tabs
+    # - navigation.indexes
     - navigation.sections
     - navigation.top
-    - toc.integrate
+    - content.code.annotate
+    # - toc.integrate
   palette:
     - media: "(prefers-color-scheme: light)"
       scheme: default
@@ -60,17 +67,17 @@ extra:
 
 nav:
   - Home: index.md
-  - 'Getting Started':
-      - 'App Dependencies': getting-started/app-dependencies.md
-      - 'Where to Install': getting-started/where-to-install.md
-      - 'Configure':
-          - 'Setup Enrichment': getting-started/configure/configure-enrichment.md
-          - 'Setup Data Model Acceleration': getting-started/configure/configure-dma.md
-          - 'Update Macros': getting-started/configure/configure-macros.md
+  - Getting Started:
+      - App Dependencies: getting-started/app-dependencies.md
+      - Where to Install: getting-started/where-to-install.md
+      - Configure:
+          - Setup Enrichment: getting-started/configure/configure-enrichment.md
+          - Setup Data Model Acceleration: getting-started/configure/configure-dma.md
+          - Update Macros: getting-started/configure/configure-macros.md
       - Troubleshooting:
-          - 'Troubleshoot Enrichment': getting-started/troubleshooting/troubleshoot-enrichment.md
+          - Troubleshoot Enrichment: getting-started/troubleshooting/troubleshoot-enrichment.md
   - Reference:
-      - 'Search Macros Used': reference/reference-macros.md
+      - Search Macros Used: reference/reference-macros.md
       - Changelog:
           - Release Notes: reference/releases/index.md
           - Release History: reference/releases/release-history.md
