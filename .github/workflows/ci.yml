@@ -2,9 +2,8 @@ name: docs
 on:
   push:
     branches:
-      # - master
-      # - main
-      - gh-pages-test
+      - master
+      - main
 jobs:
   deploy:
     runs-on: ubuntu-latest
